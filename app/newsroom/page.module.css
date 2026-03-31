@@ -1,0 +1,129 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #ffffff;
+}
+
+/* Hero Section */
+.hero {
+    background: #f8fafc;
+    padding: 80px 24px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.heroInner {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.heroTitle {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #0f172a;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+}
+
+.heroSubtitle {
+    font-size: 1.25rem;
+    color: #4b5563;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Layout Wrapper */
+.container {
+    padding: 64px 24px;
+    flex: 1;
+}
+
+.layoutWrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: flex-start;
+}
+
+@media (min-width: 1024px) {
+    .layoutWrapper {
+        flex-direction: row;
+    }
+}
+
+/* Sidebar Styling identical to generic resources layout */
+.sidebar {
+    width: 100%;
+    position: sticky;
+    top: 100px;
+}
+
+@media (min-width: 1024px) {
+    .sidebar {
+        width: 250px;
+        flex-shrink: 0;
+    }
+}
+
+.sidebarTitle {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 24px;
+}
+
+.sidebarList {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+}
+
+.sidebarItem {
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #475569;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.sidebarItem:hover {
+    background: #f1f5f9;
+    color: #0f172a;
+}
+
+.sidebarItemActive {
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #7c3aed;
+    background: #f3e8ff;
+    cursor: pointer;
+}
+
+/* Main Feed */
+.contentArea {
+    flex: 1;
+    width: 100%;
+}
+
+.feedHeader {
+    margin-bottom: 32px;
+}
+
+.feedHeader h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #1e293b;
+    letter-spacing: -0.01em;
+}

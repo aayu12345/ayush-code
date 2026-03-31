@@ -1,0 +1,224 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #ffffff;
+}
+
+/* Hero */
+.lifeHero {
+    background: radial-gradient(circle at 50% 120%, rgba(124, 58, 237, 0.08) 0%, rgba(255, 255, 255, 1) 70%);
+    padding: 120px 24px 80px;
+    text-align: center;
+}
+
+.lifeHeroInner {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.lifeTitle {
+    font-size: 4rem;
+    font-weight: 800;
+    color: #0f172a;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 24px;
+}
+
+.brandGradient {
+    background: linear-gradient(135deg, #7c3aed, #06b6d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.lifeSubtitle {
+    font-size: 1.25rem;
+    color: #475569;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Gallery - Masonry Style */
+.gallery {
+    padding: 0 24px 100px;
+}
+
+.galleryInner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.galleryGrid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+    grid-auto-rows: 240px;
+}
+
+@media (min-width: 768px) {
+    .galleryGrid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 300px;
+    }
+}
+
+.galleryItem {
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    background: #f1f5f9;
+}
+
+.galleryItem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.galleryItem:hover img {
+    transform: scale(1.05);
+}
+
+.galleryLarge {
+    grid-column: span 1;
+}
+
+@media (min-width: 768px) {
+    .galleryLarge {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+}
+
+.galleryMedium {
+    grid-column: span 1;
+}
+
+@media (min-width: 768px) {
+    .galleryMedium {
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+}
+
+.galleryOverlay {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    color: #0f172a;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transform: translateY(10px);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.galleryItem:hover .galleryOverlay {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Philosophy */
+.philosophy {
+    background: #0f172a;
+    color: #ffffff;
+    padding: 120px 24px;
+}
+
+.philosophyInner {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.philContent h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 64px;
+    letter-spacing: -0.02em;
+    color: #f8fafc;
+}
+
+.philList {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 48px;
+}
+
+@media (min-width: 768px) {
+    .philList {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+}
+
+.philBlock h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #38bdf8;
+}
+
+.philBlock p {
+    font-size: 1.1rem;
+    color: #94a3b8;
+    line-height: 1.6;
+}
+
+/* CTA */
+.lifeCta {
+    padding: 120px 24px;
+    text-align: center;
+    background: #ffffff;
+}
+
+.lifeCtaInner {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.lifeCtaInner h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 16px;
+    letter-spacing: -0.01em;
+}
+
+.lifeCtaInner p {
+    font-size: 1.2rem;
+    color: #64748b;
+    margin-bottom: 40px;
+}
+
+.ctaButton {
+    display: inline-block;
+    background: linear-gradient(135deg, #7c3aed, #06b6d4);
+    color: #ffffff;
+    padding: 16px 36px;
+    border-radius: 9999px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-decoration: none;
+    box-shadow: 0 12px 24px rgba(124, 58, 237, 0.25);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.ctaButton:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 32px rgba(124, 58, 237, 0.35);
+}
+
+@media (max-width: 768px) {
+    .lifeTitle { font-size: 2.8rem; }
+    .philContent h2 { font-size: 2.2rem; }
+}

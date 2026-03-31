@@ -104,9 +104,9 @@ const navLinks = [
             linksList: [
                 { label: 'Company', isTitle: true },
                 { label: 'About', href: '#' },
-                { label: 'Careers', href: '#' },
-                { label: 'Life at SquadStack', href: '#' },
-                { label: 'Newsroom', href: '#' }
+                { label: 'Careers', href: '/careers' },
+                { label: 'Life at shyphan.ai', href: '/life' },
+                { label: 'Newsroom', href: '/newsroom' }
             ]
         }
     },
@@ -217,16 +217,43 @@ export default function Navbar() {
 
                 {/* Right Side */}
                 <div className={styles.actions}>
-                    <a href="#" className={styles.launchedBadge}>
-                        <span>Just Launched</span>
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                            <path d="M8 2l1.08 3.26L13 5.27l-2.64 2.57.62 3.62L8 9.77l-3 1.69.62-3.62L3 5.27l3.92.99L8 2z" fill="#a78bfa" />
-                        </svg>
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                            <path d="M8 2l1.08 3.26L13 5.27l-2.64 2.57.62 3.62L8 9.77l-3 1.69.62-3.62L3 5.27l3.92.99L8 2z" fill="#c4b5fd" opacity="0.6" />
-                        </svg>
+                    <div className={styles.navItem}>
+                        <div className={styles.launchedBadge}>
+                            Just Launched <span className={styles.sparkle}>✦</span>
+                        </div>
+                        
+                        {/* Just Launched Dropdown */}
+                        <div className={styles.jlDropdown}>
+                            <div className={styles.jlHeader}>Introducing</div>
+                            <div className={styles.jlCards}>
+                                <a href="/conversational-superintelligence" className={styles.jlCard}>
+                                    <div className={`${styles.jlCardBg} ${styles.jlBg1}`}></div>
+                                    <div className={styles.jlCardContent}>
+                                        <div className={styles.jlCardTitle}>Conversational Superintelligence™</div>
+                                        <div className={styles.jlCardDesc}>Voice AI that treats every buyer uniquely.</div>
+                                    </div>
+                                </a>
+                                <a href="/in-app-voice-ai-assistant" className={styles.jlCard}>
+                                    <div className={`${styles.jlCardBg} ${styles.jlBg2}`}></div>
+                                    <div className={styles.jlCardContent}>
+                                        <div className={styles.jlCardTitle}>In-App Voice AI Assistant</div>
+                                        <div className={styles.jlCardDesc}>Orchestrate frictionless digital journeys.</div>
+                                    </div>
+                                </a>
+                                <a href="/humanoid-ai-agent-stack" className={styles.jlCard}>
+                                    <div className={`${styles.jlCardBg} ${styles.jlBg3}`}></div>
+                                    <div className={styles.jlCardContent}>
+                                        <div className={styles.jlCardTitle}>Humanoid Agent</div>
+                                        <div className={styles.jlCardDesc}>Autonomous AI that handles complex calls easily.</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="/schedule-demo" className={styles.ctaBtn}>
+                        Book a Demo &rarr;
                     </a>
-                    <a href="#" className={styles.ctaBtn}>Book a Demo →</a>
                 </div>
 
                 {/* Mobile Hamburger */}

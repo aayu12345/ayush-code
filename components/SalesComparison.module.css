@@ -1,0 +1,141 @@
+.compSection {
+    padding: 80px 24px 100px;
+    background-color: #faf5ff; /* Faint purple gradient background to match screenshot */
+    background: linear-gradient(180deg, #ffffff 0%, #fae8ff 100%);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 60px;
+}
+
+.tableWrapper {
+    width: 100%;
+}
+
+.tableHead {
+    display: flex;
+    margin-bottom: 24px;
+    align-items: center;
+}
+
+.colAspectTitle {
+    flex: 1.2;
+    padding: 16px 24px;
+    font-weight: 600;
+    color: #1e293b;
+    font-size: 1.1rem;
+}
+
+.colHumanTitle {
+    flex: 1.5;
+    padding: 16px 24px;
+    background: #f1f5f9;
+    font-weight: 600;
+    color: #1e293b;
+    font-size: 1.1rem;
+    border-radius: 12px 0 0 12px;
+    text-align: center;
+}
+
+.colAiTitle {
+    flex: 2;
+    padding: 16px 24px;
+    background: linear-gradient(90deg, #7c3aed, #c084fc);
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    margin-left: -12px; /* Overlaps slightly over the human pill */
+    z-index: 2;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);
+}
+
+.tableBody {
+    display: flex;
+    flex-direction: column;
+}
+
+.tableRow {
+    display: flex;
+    border-bottom: 1px solid rgba(139, 92, 246, 0.15);
+    transition: background-color 0.2s;
+}
+
+.tableRow:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.tableRow:last-child {
+    border-bottom: none;
+}
+
+.colAspect {
+    flex: 1.2;
+    padding: 24px;
+    font-weight: 700;
+    color: #1e293b;
+    font-size: 0.95rem;
+}
+
+.colHuman {
+    flex: 1.5;
+    padding: 24px;
+    color: #475569;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.colAi {
+    flex: 2;
+    padding: 24px;
+    color: #1e293b;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+
+@media (max-width: 768px) {
+    .tableHead {
+        display: none; /* Hide complex headers on mobile, stack rows */
+    }
+    .tableRow {
+        flex-direction: column;
+        border: 1px solid rgba(139, 92, 246, 0.2);
+        border-radius: 12px;
+        margin-bottom: 16px;
+        background: white;
+    }
+    .colAspect {
+        border-bottom: 1px solid #e2e8f0;
+        background: #f8fafc;
+        border-radius: 12px 12px 0 0;
+    }
+    .colHuman::before {
+        content: "Human-Led:";
+        font-weight: bold;
+        margin-right: 8px;
+        color: #64748b;
+    }
+    .colAi::before {
+        content: "AI Voice Agent:";
+        font-weight: bold;
+        margin-right: 8px;
+        color: #7c3aed;
+    }
+    .colHuman, .colAi {
+        padding: 16px 24px;
+    }
+}

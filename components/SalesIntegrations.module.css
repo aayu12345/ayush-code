@@ -1,0 +1,126 @@
+.integrationSection {
+    padding: 80px 24px;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 80px;
+}
+
+.nodeMap {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+}
+
+.svgConnections {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.colLeft, .colRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    z-index: 2;
+}
+
+.colCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    z-index: 2;
+    position: relative;
+}
+
+.nodeCard {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    width: 160px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: #475569;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nodeCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+    border-color: #8b5cf6;
+}
+
+.hubNode {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, rgba(233, 213, 255, 0.8), rgba(253, 224, 243, 0.8));
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 20px 40px rgba(139, 92, 246, 0.2);
+    /* Backdrop filter creates the frosted glass effect from the screenshot */
+    backdrop-filter: blur(10px);
+}
+
+.btnCustom {
+    position: absolute;
+    bottom: -15px;
+    background: white;
+    border: 1px solid #e2e8f0;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #475569;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    cursor: pointer;
+}
+
+.btnCustom:hover {
+    border-color: #8b5cf6;
+    color: #8b5cf6;
+}
+
+@media (max-width: 768px) {
+    .nodeMap {
+        flex-direction: column;
+        height: auto;
+        gap: 40px;
+    }
+    .svgConnections {
+        display: none; /* Disable complex SVG curves on mobile */
+    }
+    .colLeft, .colRight {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+}

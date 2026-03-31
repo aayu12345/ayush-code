@@ -1,0 +1,155 @@
+.journeysSection {
+    padding: 80px 24px;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 60px;
+}
+
+/* Horizontal Scroll Container */
+.carouselWrapper {
+    width: 100%;
+}
+
+.scrollTrack {
+    display: flex;
+    overflow-x: auto;
+    gap: 24px;
+    padding-bottom: 24px;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none; /* Firefox */
+}
+
+.scrollTrack::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+}
+
+/* Individual Card */
+.journeyCard {
+    flex: 0 0 280px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: start;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.journeyCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+    border-color: #cbd5e1;
+}
+
+.cardIcon {
+    font-size: 2rem;
+    margin-bottom: 24px;
+    color: #8b5cf6;
+}
+
+.cardTitle {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 20px;
+}
+
+.cardList {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 32px 0;
+    flex: 1;
+}
+
+.cardList li {
+    position: relative;
+    padding-left: 16px;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    color: #64748b;
+    line-height: 1.4;
+}
+
+.cardList li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #94a3b8;
+}
+
+.playBtn {
+    background: transparent;
+    border: none;
+    color: #94a3b8;
+    font-weight: 500;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    padding: 0;
+    transition: color 0.2s;
+}
+
+.playIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    background: #8b5cf6;
+    color: white;
+    border-radius: 50%;
+    font-size: 0.6rem;
+}
+
+.playBtn:hover {
+    color: #8b5cf6;
+}
+
+.carouselNav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.navBtn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #e2e8f0;
+    background: #f8fafc;
+    color: #475569;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.navBtn:hover {
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+@media (max-width: 640px) {
+    .journeyCard {
+        flex: 0 0 85%;
+    }
+}

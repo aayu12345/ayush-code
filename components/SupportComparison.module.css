@@ -1,0 +1,162 @@
+.compSection {
+    padding: 80px 24px 100px;
+    background: linear-gradient(180deg, #ffffff 0%, #e0e7ff 100%);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 500;
+    color: #1e293b;
+    margin-bottom: 60px;
+}
+
+.tableWrapper {
+    width: 100%;
+}
+
+.tableHead {
+    display: flex;
+    margin-bottom: 24px;
+    align-items: center;
+}
+
+.colAspectTitle {
+    flex: 1.2;
+    padding: 16px 24px;
+    font-weight: 600;
+    color: #1e293b;
+    font-size: 1.1rem;
+}
+
+.colHumanTitle {
+    flex: 1.5;
+    padding: 16px 24px;
+    background: #e2e8f0;
+    font-weight: 600;
+    color: #0f172a;
+    font-size: 1.1rem;
+    border-radius: 12px 0 0 12px;
+    text-align: left;
+}
+
+.colAiTitle {
+    flex: 2;
+    padding: 16px 24px;
+    background: linear-gradient(90deg, #8b5cf6, #3b82f6);
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    margin-left: -12px;
+    z-index: 2;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+}
+
+.tableBody {
+    display: flex;
+    flex-direction: column;
+}
+
+.tableRow {
+    display: flex;
+    border-bottom: 1px solid rgba(99, 102, 241, 0.15);
+    transition: background-color 0.2s;
+}
+
+.tableRow:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.tableRow:last-child {
+    border-bottom: none;
+}
+
+.colAspect {
+    flex: 1.2;
+    padding: 24px;
+    font-weight: 700;
+    color: #1e293b;
+    font-size: 0.95rem;
+}
+
+.colHuman {
+    flex: 1.5;
+    padding: 24px;
+    color: #475569;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.colAi {
+    flex: 2;
+    padding: 24px;
+    color: #1e293b;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.ctaWrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.btnDemo {
+    background-color: #0f172a;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 32px;
+    font-size: 1.125rem;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: background-color 0.2s;
+}
+
+.btnDemo:hover {
+    background-color: #1e293b;
+}
+
+@media (max-width: 768px) {
+    .tableHead {
+        display: none;
+    }
+    .tableRow {
+        flex-direction: column;
+        border: 1px solid rgba(99, 102, 241, 0.2);
+        border-radius: 12px;
+        margin-bottom: 16px;
+        background: white;
+    }
+    .colAspect {
+        border-bottom: 1px solid #e2e8f0;
+        background: #f8fafc;
+        border-radius: 12px 12px 0 0;
+    }
+    .colHuman::before {
+        content: "Human-Led:";
+        font-weight: bold;
+        margin-right: 8px;
+        color: #64748b;
+    }
+    .colAi::before {
+        content: "Voice Agent:";
+        font-weight: bold;
+        margin-right: 8px;
+        color: #6366f1;
+    }
+    .colHuman, .colAi {
+        padding: 16px 24px;
+    }
+}

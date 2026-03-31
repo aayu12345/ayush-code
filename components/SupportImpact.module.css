@@ -1,0 +1,181 @@
+.impactSection {
+    padding: 100px 24px 120px;
+    background-color: #eef2ff; /* Pale indigo matching screenshot */
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 500;
+    color: #1e293b;
+    margin-bottom: 60px;
+}
+
+.impactBox {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.imageBlock {
+    width: 65%;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.mainImg {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 16/10;
+    object-fit: cover;
+}
+
+/* Floating Card Layout */
+.statsCardWrapper {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 60%;
+    z-index: 2;
+}
+
+.statsCard {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(99, 102, 241, 0.15);
+    border: 1px solid rgba(255,255,255,0.8);
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.logoWrap {
+    display: flex;
+    align-items: center;
+}
+
+.logoText {
+    font-size: 1.75rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #0f172a;
+}
+
+.iconLink {
+    width: 36px;
+    height: 36px;
+    background: #e0e7ff;
+    color: #6366f1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.iconLink:hover {
+    background: #c7d2fe;
+}
+
+.statsFlex {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+.statBox {
+    flex: 1;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 24px 16px;
+    background: #ffffff;
+}
+
+.statVal {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #0f172a;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.sDown { font-size: 1.2rem; color: #1e293b; }
+
+.statLabel {
+    font-size: 0.90rem;
+    color: #475569;
+    font-weight: 500;
+}
+
+/* Audio Recording Links */
+.audioLinks {
+    display: flex;
+    gap: 24px;
+}
+
+.playBtn {
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #0f172a;
+    cursor: pointer;
+    transition: color 0.2s;
+    padding: 0;
+}
+
+.playBtn:hover {
+    color: #6366f1;
+}
+
+.playIcon {
+    width: 36px;
+    height: 36px;
+    background: #8b5cf6;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    padding-left: 2px;
+}
+
+
+@media (max-width: 900px) {
+    .imageBlock {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+    .statsCardWrapper {
+        position: relative;
+        width: 95%;
+        margin: -40px auto 0;
+        top: 0;
+        transform: none;
+    }
+    .statsFlex {
+        flex-direction: column;
+    }
+}

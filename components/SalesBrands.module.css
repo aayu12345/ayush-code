@@ -1,0 +1,72 @@
+.brandsSection {
+    padding: 60px 24px 100px;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.heading {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #475569;
+    margin-bottom: 40px;
+}
+
+/* This outer wrapper and grid trick creates identical inner borders only */
+.gridOuter {
+    border-top: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+    overflow: hidden;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #e2e8f0; /* Color of the borders */
+    gap: 1px; /* The gap shows the background color acting as a 1px border */
+}
+
+.gridItem {
+    background-color: #ffffff; /* Cells cover the background, leaving the gap visible */
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s;
+    padding: 20px;
+    text-align: center;
+}
+
+.gridItem:hover {
+    background-color: #f8fafc;
+}
+
+.logoPlaceholder {
+    opacity: 0.9;
+    filter: grayscale(20%);
+    transition: filter 0.2s, opacity 0.2s;
+}
+
+.gridItem:hover .logoPlaceholder {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+@media (max-width: 992px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .gridItem {
+        height: 100px;
+    }
+}

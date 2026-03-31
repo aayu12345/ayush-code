@@ -1,0 +1,210 @@
+.impactSection {
+    padding: 100px 24px 120px;
+    background-color: #faf5ff; /* Matches the faint purple background from the screenshot */
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 60px;
+}
+
+.impactBox {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 60px; /* Space for absolute nav */
+}
+
+.imageBlock {
+    width: 65%;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.mainImg {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+
+/* Floating Card Layout */
+.statsCardWrapper {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 55%;
+    z-index: 2;
+}
+
+.statsCard {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(139, 92, 246, 0.15);
+    border: 1px solid rgba(255,255,255,0.8);
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.logoText {
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+    color: #1e293b;
+}
+
+.iconLink {
+    width: 32px;
+    height: 32px;
+    background: #f3e8ff;
+    color: #8b5cf6;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.iconLink:hover {
+    background: #e9d5ff;
+}
+
+.statsFlex {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.statBox {
+    flex: 1;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 24px;
+    background: #ffffff;
+}
+
+.statVal {
+    font-size: 2.25rem;
+    font-weight: 400;
+    color: #1e1b4b;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sUp { font-size: 1rem; color: #8b5cf6; }
+.sDown { font-size: 1rem; color: #1e293b; }
+
+.statLabel {
+    font-size: 0.95rem;
+    color: #64748b;
+    font-weight: 500;
+}
+
+/* Audio Recording Links */
+.audioLinks {
+    display: flex;
+    gap: 24px;
+}
+
+.playBtn {
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #475569;
+    cursor: pointer;
+    transition: color 0.2s;
+    padding: 0;
+}
+
+.playBtn:hover {
+    color: #8b5cf6;
+}
+
+.playIcon {
+    width: 32px;
+    height: 32px;
+    background: #a78bfa;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.70rem;
+    padding-left: 2px;
+}
+
+/* Nav */
+.carouselNav {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    gap: 12px;
+}
+
+.navBtn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    border: none;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #475569;
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+}
+.navBtn:hover { background: #f8fafc; }
+
+
+@media (max-width: 900px) {
+    .imageBlock {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+    .statsCardWrapper {
+        position: relative;
+        width: 95%;
+        margin: -40px auto 0;
+        top: 0;
+        transform: none;
+    }
+    .statsFlex {
+        flex-direction: column;
+    }
+    .carouselNav {
+        position: relative;
+        margin-top: 24px;
+        justify-content: center;
+    }
+    .impactBox { padding-bottom: 0; }
+}

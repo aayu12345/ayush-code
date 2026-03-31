@@ -39,9 +39,57 @@ const navLinks = [
             },
         ]
     },
-    { label: 'Solutions', hasDropdown: true },
-    { label: 'Case Studies', hasDropdown: false },
-    { label: 'Resources', hasDropdown: true },
+    { 
+        label: 'Solutions', 
+        hasDropdown: true,
+        items: [
+            {
+                label: 'Sales', href: '/sales', icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" /><line x1="3" y1="6" x2="21" y2="6" /><path d="M16 10a4 4 0 0 1-8 0" /></svg>
+            },
+            {
+                label: 'Workforce Hiring & Management', href: '/workforce-hiring-management', icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg>
+            },
+            {
+                label: 'Loan EMI Collections', href: '/loan-emi-collections', icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="12" y1="2" x2="12" y2="6"/></svg>
+            },
+            {
+                label: 'Customer Support Automation', href: '/customer-support-automation', icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" /></svg>
+            }
+        ]
+    },
+    { label: 'Case Studies', href: '/customer-stories', hasDropdown: false },
+    { 
+        label: 'Resources', 
+        hasDropdown: true,
+        isMegaMenu: true,
+        megaMenuContent: {
+            leftLinks: [
+                { label: 'Blogs', href: '#', icon: <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg> },
+                { label: 'Success Stories', href: '/customer-stories', icon: <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg> },
+                { label: 'E-books and White Papers', href: '#', icon: <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg> },
+                { label: 'Events', href: '#', icon: <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> },
+                { label: 'Humanoid Interaction Library', href: '#', icon: <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M2 16.1A5 5 0 0 1 5.9 20M2 12.05A9 9 0 0 1 9.95 20M2 8V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6"></path><line x1="2" y1="20" x2="2.01" y2="20"></line></svg> },
+                { label: 'NewsLetters', href: '#', icon: <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg> },
+                { label: 'Industry Reports', href: '#', icon: <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg> },
+                { label: 'Webinars', href: '#', icon: <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg> },
+                { label: 'View All', href: '#', icon: <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg> },
+            ],
+            rightCards: [
+                {
+                    title: 'kissht',
+                    imgUrl: 'https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=400&auto=format&fit=crop',
+                },
+                {
+                    title: 'Classplus',
+                    imgUrl: 'https://images.unsplash.com/photo-1542744094-24638ea0b3b5?q=80&w=400&auto=format&fit=crop',
+                },
+                {
+                    title: 'EUREKA FORBES',
+                    imgUrl: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=400&auto=format&fit=crop',
+                }
+            ]
+        }
+    },
     { label: 'Company', hasDropdown: true },
 ];
 
@@ -73,7 +121,7 @@ export default function Navbar() {
                 <ul className={styles.links}>
                     {navLinks.map((navItem) => (
                         <li key={navItem.label} className={styles.navItem}>
-                            <a href="#" className={styles.navLink}>
+                            <a href={navItem.href || "#"} className={styles.navLink}>
                                 {navItem.label}
                                 {navItem.hasDropdown && (
                                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
@@ -83,7 +131,7 @@ export default function Navbar() {
                             </a>
 
                             {/* Dropdown Menu */}
-                            {navItem.items && (
+                            {navItem.items && !navItem.isMegaMenu && (
                                 <div className={styles.dropdown}>
                                     {navItem.items.map((dropItem) => (
                                         <a href={dropItem.href} key={dropItem.label} className={styles.dropLink}>
@@ -93,6 +141,33 @@ export default function Navbar() {
                                             <span className={styles.dropText}>{dropItem.label}</span>
                                         </a>
                                     ))}
+                                </div>
+                            )}
+                            
+                            {/* Mega Menu */}
+                            {navItem.isMegaMenu && navItem.megaMenuContent && (
+                                <div className={styles.megaMenu}>
+                                    <div className={styles.megaMenuLeft}>
+                                        {navItem.megaMenuContent.leftLinks.map((link, idx) => (
+                                            <a href={link.href} key={idx} className={styles.megaLink}>
+                                                <span className={styles.megaIcon}>{link.icon}</span>
+                                                <span className={styles.megaText}>{link.label}</span>
+                                            </a>
+                                        ))}
+                                    </div>
+                                    <div className={styles.megaMenuRight}>
+                                        <div className={styles.megaMenuRightTitle}>Stories of success</div>
+                                        <div className={styles.megaMenuCards}>
+                                            {navItem.megaMenuContent.rightCards.map((card, cidx) => (
+                                                <a href="/customer-stories" key={cidx} className={styles.megaCard}>
+                                                    <img src={card.imgUrl} alt={card.title} className={styles.megaCardImg} />
+                                                    <div className={styles.megaCardOverlay}>
+                                                        <span className={styles.megaCardBrand}>{card.title}</span>
+                                                    </div>
+                                                </a>
+                                            ))}
+                                        </div>
+                                    </div>
                                 </div>
                             )}
                         </li>
@@ -130,14 +205,24 @@ export default function Navbar() {
                 <div className={styles.drawer}>
                     {navLinks.map((navItem) => (
                         <div key={navItem.label} className={styles.drawerGroup}>
-                            <a href="#" className={styles.drawerLink} onClick={() => !navItem.items && setMenuOpen(false)}>
+                            <a href={navItem.href || "#"} className={styles.drawerLink} onClick={() => !navItem.items && setMenuOpen(false)}>
                                 {navItem.label}
                             </a>
-                            {navItem.items && (
+                            {navItem.items && !navItem.isMegaMenu && (
                                 <div className={styles.drawerSub}>
                                     {navItem.items.map(subItem => (
                                         <a href={subItem.href} key={subItem.label} className={styles.drawerSubLink} onClick={() => setMenuOpen(false)}>
                                             {subItem.label}
+                                        </a>
+                                    ))}
+                                </div>
+                            )}
+                            {navItem.isMegaMenu && navItem.megaMenuContent && (
+                                <div className={styles.drawerSub}>
+                                    <div style={{fontWeight: 600, padding: '8px 16px', color: '#1e293b'}}>Links</div>
+                                    {navItem.megaMenuContent.leftLinks.map((link, subIdx) => (
+                                        <a href={link.href} key={subIdx} className={styles.drawerSubLink} onClick={() => setMenuOpen(false)}>
+                                            {link.label}
                                         </a>
                                     ))}
                                 </div>

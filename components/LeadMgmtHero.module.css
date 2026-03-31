@@ -1,0 +1,232 @@
+.heroSection {
+    padding: 140px 24px 80px;
+    background-color: #f8fafc; /* Crisp cool gray/blue tone */
+    position: relative;
+    overflow: hidden;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.heroSection::before {
+    content: '';
+    position: absolute;
+    top: -20%;
+    right: -10%;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(139, 92, 246, 0.08) 0%, rgba(248, 250, 252, 0) 70%);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    position: relative;
+    z-index: 2;
+}
+
+.textContent {
+    flex: 0 0 45%; 
+    max-width: 550px;
+    text-align: left;
+}
+
+.badge {
+    display: inline-block;
+    color: #6366f1;
+    background: #e0e7ff;
+    padding: 6px 16px;
+    border-radius: 100px;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
+
+.title {
+    font-size: 4rem; 
+    font-weight: 800;
+    line-height: 1.1;
+    color: #0f172a;
+    margin-bottom: 24px;
+    letter-spacing: -0.02em;
+}
+
+.highlight {
+    color: #6366f1;
+}
+
+.subtitle {
+    font-size: 1.125rem;
+    color: #475569;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.primaryBtn {
+    background-color: #0f172a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 16px 32px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.15);
+    transition: all 0.2s;
+}
+
+.primaryBtn:hover {
+    background-color: #1e293b;
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px rgba(15, 23, 42, 0.2);
+}
+
+/* Photo Composition Styles */
+.visualContent {
+    flex: 0 0 50%;
+    position: relative;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageComposition {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.mainImgWrapper {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 380px;
+    height: 480px;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    border: 8px solid white;
+}
+
+.mainImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top; 
+}
+
+.secondaryImgWrapper {
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    width: 250px;
+    height: 180px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+    border: 6px solid white;
+    z-index: 10;
+}
+
+.secondaryImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.floatingTag {
+    position: absolute;
+    top: 60px;
+    left: 40px;
+    background: white;
+    padding: 12px 20px;
+    border-radius: 100px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    font-weight: 600;
+    color: #1e293b;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 15;
+}
+
+.statusDot {
+    width: 10px;
+    height: 10px;
+    background: #10b981;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+}
+
+.floatingStats {
+    position: absolute;
+    top: 40%;
+    right: -20px;
+    background: white;
+    padding: 16px 24px;
+    border-radius: 16px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    z-index: 15;
+}
+
+.statLabel {
+    font-size: 0.75rem;
+    color: #64748b;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.statValue {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #0f172a;
+}
+
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .textContent {
+        flex: 1;
+        width: 100%;
+        text-align: center;
+    }
+    .title {
+        font-size: 3rem;
+    }
+    .visualContent {
+        flex: 1;
+        width: 100%;
+        height: 500px;
+        margin-top: 40px;
+    }
+    .mainImgWrapper {
+        right: auto;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .secondaryImgWrapper {
+        display: none; /* Simplify on mobile */
+    }
+    .floatingStats {
+        right: auto;
+        left: 0;
+    }
+}

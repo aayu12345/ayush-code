@@ -11,7 +11,7 @@ export default function GlobalFooter() {
                             <rect x="13" y="13" width="9" height="9" rx="2" fill="currentColor" opacity="0.6" />
                             <rect x="2" y="13" width="9" height="9" rx="2" fill="currentColor" opacity="0.8" />
                         </svg>
-                        <span className={styles.brandText}>SquadStack.ai</span>
+                        <span className={styles.brandText}>shyphan.ai</span>
                     </div>
                     
                     <h2 className={styles.ctaTitle}>Revolutionize Your Sales Process Today!</h2>
@@ -26,7 +26,7 @@ export default function GlobalFooter() {
                             <rect x="13" y="13" width="9" height="9" rx="2" fill="currentColor" opacity="0.6" />
                             <rect x="2" y="13" width="9" height="9" rx="2" fill="currentColor" opacity="0.8" />
                         </svg>
-                        <span>SquadStack.ai</span>
+                        <span>shyphan.ai</span>
                     </div>
                 </div>
                 
@@ -82,7 +82,7 @@ export default function GlobalFooter() {
                         
                         <h4 className={styles.colTitle} style={{marginTop: '48px'}}>Company</h4>
                         <ul className={styles.linkList}>
-                            <li><a href="#">Life at SquadStack</a></li>
+                            <li><a href="/life">Life at shyphan.ai</a></li>
                             <li><a href="#">Team & Investors</a></li>
                             <li>
                                 <a href="#" style={{display: 'flex', alignItems: 'center', gap: '8px'}}>
@@ -92,7 +92,7 @@ export default function GlobalFooter() {
                         </ul>
                         
                         <h4 className={styles.colTitle} style={{marginTop: '32px'}}>Connect</h4>
-                        <a href="mailto:sales@squadstack.com" className={styles.emailLink}>sales@squadstack.com</a>
+                        <a href="mailto:sales@shyphan.ai" className={styles.emailLink}>sales@shyphan.ai</a>
                         <div className={styles.socialRow}>
                             <a href="#" className={styles.socialIcon}>fb</a>
                             <a href="#" className={styles.socialIcon}>ig</a>

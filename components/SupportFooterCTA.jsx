@@ -24,7 +24,7 @@ export default function SupportFooterCTA() {
                                     <rect x="2" y="13" width="9" height="9" rx="2" fill="#475569" />
                                     <rect x="13" y="13" width="9" height="9" rx="2" fill="#cbd5e1" />
                                 </svg>
-                                <span>SquadStack.ai</span>
+                                <span>shyphan.ai</span>
                             </div>
                         </div>
 
@@ -34,7 +34,7 @@ export default function SupportFooterCTA() {
                                 <li><a href="#">Our Complete Stack</a></li>
                                 <li><a href="#">Blog</a></li>
                                 <li><a href="#">Webinars</a></li>
-                                <li><a href="#">Life at SquadStack</a></li>
+                                <li><a href="/life">Life at shyphan.ai</a></li>
                             </ul>
                         </div>
 
@@ -50,7 +50,7 @@ export default function SupportFooterCTA() {
                             <button className={styles.btnPrimary}>
                                 Book a Demo <span style={{marginLeft: "8px"}}>→</span>
                             </button>
-                            <a href="mailto:sales@squadstack.com" className={styles.emailText}>sales@squadstack.com</a>
+                            <a href="mailto:sales@shyphan.ai" className={styles.emailText}>sales@shyphan.ai</a>
                         </div>
                     </div>
 

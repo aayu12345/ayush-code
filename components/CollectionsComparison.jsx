@@ -54,7 +54,7 @@ export default function CollectionsComparison() {
                     <div className={styles.tableHead}>
                         <div className={styles.colAspectTitle}>Aspect</div>
                         <div className={styles.colHumanTitle}>Human-Led Collections</div>
-                        <div className={styles.colAiTitle}>SquadStack.AI Voice Agent-Led Collections</div>
+                        <div className={styles.colAiTitle}>shyphan.ai Voice Agent-Led Collections</div>
                     </div>
 
                     {/* Body Rows */}

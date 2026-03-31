@@ -54,7 +54,7 @@ export default function WorkforceComparison() {
                     <div className={styles.tableHead}>
                         <div className={styles.colAspectTitle}>Aspect</div>
                         <div className={styles.colHumanTitle}>Human-Led Hiring</div>
-                        <div className={styles.colAiTitle}>SquadStack.AI Voice Agent-Led Hiring</div>
+                        <div className={styles.colAiTitle}>shyphan.ai Voice Agent-Led Hiring</div>
                     </div>
 
                     {/* Body Rows */}

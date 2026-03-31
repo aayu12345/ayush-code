@@ -11,7 +11,7 @@ const resources = [
     },
     {
         type: 'BLOG',
-        title: 'Understand the Quality AI at SquadStack',
+        title: 'Understand the Quality AI at shyphan.ai',
         linkText: 'Read Now',
         href: '#',
         bgStyle: styles.bgPurple

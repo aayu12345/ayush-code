@@ -14,7 +14,7 @@ export default function EventsGrid() {
             id: 2,
             badge: 'EVENT',
             date: '03/13/2022',
-            title: 'SquadStack Wins \'CX Leader of the Year\' at CX Strategy Summit',
+            title: 'shyphan.ai Wins \'CX Leader of the Year\' at CX Strategy Summit',
             desc: 'Recognizing operational excellence and telecalling automation that powered exponential pipeline generation for leading firms.',
             imgUrl: 'https://images.unsplash.com/photo-1561489413-985b06da5bee?q=80&w=600&auto=format&fit=crop'
         },

@@ -33,7 +33,7 @@ export default function NewsletterFooter() {
                                 <rect x="13" y="13" width="9" height="9" rx="2" opacity="0.6" />
                                 <rect x="2" y="13" width="9" height="9" rx="2" opacity="0.8" />
                             </svg>
-                            <span className={styles.logoText}>SquadStack.ai</span>
+                            <span className={styles.logoText}>shyphan.ai</span>
                         </div>
                     </div>
                     
@@ -42,7 +42,7 @@ export default function NewsletterFooter() {
                         <a href="#">Our Complete Stack</a>
                         <a href="#">Blog</a>
                         <a href="#">Webinars</a>
-                        <a href="#">Life at SquadStack</a>
+                        <a href="/life">Life at shyphan.ai</a>
                     </div>
                     
                     <div className={styles.linkList}>
@@ -53,7 +53,7 @@ export default function NewsletterFooter() {
                     
                     <div className={styles.actionCol}>
                         <button className={styles.demoBtn}>Book a Demo →</button>
-                        <a href="mailto:sales@squadstack.com" className={styles.emailText}>sales@squadstack.com</a>
+                        <a href="mailto:sales@shyphan.ai" className={styles.emailText}>sales@shyphan.ai</a>
                     </div>
                 </div>
                 

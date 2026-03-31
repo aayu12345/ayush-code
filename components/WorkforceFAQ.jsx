@@ -13,7 +13,7 @@ const faqs = [
         a: "Yes. Our engines are specifically optimized for gig economy metrics where time-to-hire directly translates to gross revenue."
     },
     {
-        q: "Can SquadStack reduce early worker churn?",
+        q: "Can shyphan.ai reduce early worker churn?",
         a: "Absolutely. By accurately detailing job expectations upfront and standardizing the information shared on the call, candidates have realistic expectations."
     },
     {

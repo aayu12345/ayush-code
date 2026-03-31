@@ -6,7 +6,7 @@ import EbookGrid from '@/components/EbookGrid';
 import GlobalFooter from '@/components/GlobalFooter';
 
 export const metadata = {
-    title: 'SquadStack | E-books & White Papers',
+    title: 'shyphan.ai | E-books & White Papers',
     description: 'Stay updated to fuel your hunger for growth! Download industry leading resources.',
 };
 

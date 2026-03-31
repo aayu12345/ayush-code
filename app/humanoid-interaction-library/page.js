@@ -6,7 +6,7 @@ import HumanoidGrid from '@/components/HumanoidGrid';
 import GlobalFooter from '@/components/GlobalFooter';
 
 export const metadata = {
-    title: 'Humanoid Interaction Library | SquadStack Resources',
+    title: 'Humanoid Interaction Library | shyphan.ai Resources',
     description: 'Listen to recorded interactions showcasing how the Humanoid AI Agent effortlessly handles complex test drives, onboarding, and return bookings.',
 };
 

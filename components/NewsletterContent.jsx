@@ -9,7 +9,7 @@ export default function NewsletterContent() {
         <section className={styles.contentSection}>
             <div className={styles.header}>
                 <h2 className={styles.mainTitle}>Latest NewsLetters</h2>
-                <p className={styles.subtitle}>Inside the AI Revolution: SquadStack's Take on the Future</p>
+                <p className={styles.subtitle}>Inside the AI Revolution: shyphan.ai's Take on the Future</p>
                 
                 <div className={styles.tabsContainer}>
                     <button 
@@ -35,7 +35,7 @@ export default function NewsletterContent() {
                             <span className={styles.logoDark}>in</span>
                         </div>
                         <div className={styles.logoBottom}>
-                            <span className={styles.byLine}>by SquadStack</span>
+                            <span className={styles.byLine}>by shyphan.ai</span>
                         </div>
                     </div>
 
@@ -53,7 +53,7 @@ export default function NewsletterContent() {
                             <span className={styles.dateLabel}>JUNE 16, 2025</span>
                             <h3 className={styles.editionTitle}>Dialed In - First Edition</h3>
                             <p className={styles.desc}>
-                                Welcome to the first edition of Dialed In by SquadStack - your go-to source for cutting-edge insights on CX and AI innovation.
+                                Welcome to the first edition of Dialed In by shyphan.ai - your go-to source for cutting-edge insights on CX and AI innovation.
                             </p>
                             <a href="#" className={styles.readMore}>Read More</a>
                         </div>
@@ -69,7 +69,7 @@ export default function NewsletterContent() {
                             <span className={styles.logoLight} style={{color: '#8b5cf6'}}>Wave</span>
                         </div>
                         <div className={styles.logoBottom}>
-                            <span className={styles.byLine}>Insights by SquadStack</span>
+                            <span className={styles.byLine}>Insights by shyphan.ai</span>
                         </div>
                     </div>
                     <div className={styles.columnsBlock}>

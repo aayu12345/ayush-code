@@ -5,7 +5,7 @@ export default function EbookHero() {
         <section className={styles.heroSection}>
             <div className={styles.container}>
                 <h1 className={styles.title}>
-                    SquadStack <span className={styles.highlight}>Resources</span>
+                    shyphan.ai <span className={styles.highlight}>Resources</span>
                 </h1>
                 <p className={styles.subtitle}>
                     Stay updated to fuel your hunger for growth!

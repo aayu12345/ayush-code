@@ -49,7 +49,7 @@ export default function SupportComparison() {
                     <div className={styles.tableHead}>
                         <div className={styles.colAspectTitle}>Aspect</div>
                         <div className={styles.colHumanTitle}>Human-Led Support</div>
-                        <div className={styles.colAiTitle}>SquadStack.AI Voice Agent</div>
+                        <div className={styles.colAiTitle}>shyphan.ai Voice Agent</div>
                     </div>
 
                     {/* Body Rows */}

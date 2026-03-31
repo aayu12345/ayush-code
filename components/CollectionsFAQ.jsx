@@ -9,7 +9,7 @@ const faqs = [
         a: "Our AI agents engage debtors consistently with empathetic yet firm tone-mapping. By persistently following up via omnichannel strategies (Call, WhatsApp, SMS), we drastically reduce missed contacts and effectively negotiate repayment timelines without human fatigue."
     },
     {
-        q: "Is SquadStack's AI compliant with RBI & TRAI regulations?",
+        q: "Is shyphan.ai's AI compliant with RBI & TRAI regulations?",
         a: "Absolutely. Our platform has built-in DND scrubbing, enforces strictly regulated calling hours (e.g., 8 AM - 7 PM), and maintains 100% audit-ready interaction logs. We do not use aggressive or harassing language, ensuring total compliance with fair practices."
     },
     {

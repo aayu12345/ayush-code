@@ -6,7 +6,7 @@ import EventsGrid from '@/components/EventsGrid';
 import GlobalFooter from '@/components/GlobalFooter';
 
 export const metadata = {
-    title: 'Events | SquadStack Resources',
+    title: 'Events | shyphan.ai Resources',
     description: 'Catch up on all the latest events, masterclasses, and award summits involving standard telecalling integrations.',
 };
 

@@ -7,7 +7,7 @@ import BlogNewsletter from '@/components/BlogNewsletter';
 import SalesFooterCTA from '@/components/SalesFooterCTA'; 
 
 export const metadata = {
-    title: 'SquadStack Blog | Telecalling Technology, Trends, and Practices',
+    title: 'shyphan.ai Blog | Telecalling Technology, Trends, and Practices',
     description: 'Read the latest insights, strategies, and technology updates on Voice AI and modern telecalling software.',
 };
 

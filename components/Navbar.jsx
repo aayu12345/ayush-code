@@ -306,11 +306,20 @@ export default function Navbar() {
                                     )}
                                     {navItem.isMegaMenu && navItem.megaMenuContent && (
                                         <div className={styles.drawerSub}>
-                                            {navItem.megaMenuContent.leftLinks.map((link, subIdx) => (
-                                                <a href={link.href} key={subIdx} className={styles.drawerSubLink} onClick={() => setMenuOpen(false)}>
-                                                    {link.label}
-                                                </a>
-                                            ))}
+                                            {navItem.megaMenuLayout === 'company'
+                                                ? navItem.megaMenuContent.linksList
+                                                    .filter(link => !link.isTitle)
+                                                    .map((link, subIdx) => (
+                                                        <a href={link.href} key={subIdx} className={styles.drawerSubLink} onClick={() => setMenuOpen(false)}>
+                                                            {link.label}
+                                                        </a>
+                                                    ))
+                                                : (navItem.megaMenuContent.leftLinks || []).map((link, subIdx) => (
+                                                    <a href={link.href} key={subIdx} className={styles.drawerSubLink} onClick={() => setMenuOpen(false)}>
+                                                        {link.label}
+                                                    </a>
+                                                ))
+                                            }
                                         </div>
                                     )}
                                 </>

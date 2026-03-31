@@ -6,7 +6,7 @@ import WebinarGrid from '@/components/WebinarGrid';
 import GlobalFooter from '@/components/GlobalFooter';
 
 export const metadata = {
-    title: 'Webinars | SquadStack Resources',
+    title: 'Webinars | shyphan.ai Resources',
     description: 'Watch comprehensive webinars examining strategies and AI automation implementations targeting CX, telecalling, and sales.',
 };
 

@@ -5,7 +5,7 @@ const mockPosts = [
         id: 1,
         category: "Product Updates",
         readTime: "4 Minutes",
-        title: "Announcing SquadStack's New Agent Management Platform",
+        title: "Announcing shyphan.ai's New Agent Management Platform",
         desc: "Discover how our latest platform features help sales teams monitor, train, and deploy AI voice agents with unprecedented accuracy and speed.",
         img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=600&auto=format&fit=crop"
     },
@@ -45,7 +45,7 @@ const mockPosts = [
         id: 6,
         category: "Product Updates",
         readTime: "3 Minutes",
-        title: "New Integration: Connect Your SquadStack CRM in 1 Click",
+        title: "New Integration: Connect Your shyphan.ai CRM in 1 Click",
         desc: "Our new App Marketplace lets you seamlessly sync lead sets from HubSpot, Salesforce, and Zoho directly into your active campaigns.",
         img: "https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=600&auto=format&fit=crop"
     }

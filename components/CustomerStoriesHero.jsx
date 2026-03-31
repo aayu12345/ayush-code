@@ -23,7 +23,7 @@ export default function CustomerStoriesHero() {
                                 <rect x="13" y="13" width="9" height="9" rx="2" fill="white" opacity="0.5" />
                                 <rect x="2" y="13" width="9" height="9" rx="2" fill="white" opacity="0.8" />
                             </svg>
-                            SquadStack × <span className={styles.boldBrand}>DELHIVERY</span>
+                            shyphan.ai × <span className={styles.boldBrand}>DELHIVERY</span>
                         </div>
                     </div>
                     <div className={styles.contentCol}>

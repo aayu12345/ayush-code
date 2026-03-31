@@ -28,7 +28,7 @@ const allStories = [
         id: 3,
         brand: "DELHIVERY",
         category: "Logistics & E-Commerce",
-        title: "Discover how Delhivery reduced rider acquisition costs by 4x and sped up onboarding by 3x using SquadStack's AI Voice Agents.",
+        title: "Discover how Delhivery reduced rider acquisition costs by 4x and sped up onboarding by 3x using shyphan.ai's AI Voice Agents.",
         imgUrl: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=600&auto=format&fit=crop"
     },
     {
@@ -42,14 +42,14 @@ const allStories = [
         id: 5,
         brand: "Shiprocket",
         category: "Logistics & E-Commerce",
-        title: "See how Shiprocket used SquadStack's AI Calling Engine to handle 3L+ leads, boost seller ID 5x, scale outreach 4x, and drive 5x First Time Recharge.",
+        title: "See how Shiprocket used shyphan.ai's AI Calling Engine to handle 3L+ leads, boost seller ID 5x, scale outreach 4x, and drive 5x First Time Recharge.",
         imgUrl: "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?q=80&w=600&auto=format&fit=crop"
     },
     {
         id: 6,
         brand: "Bank-Linked Brokerage",
         category: "Brokerage",
-        title: "Learn how a leading bank-linked brokerage in India achieved 3x higher conversions and 3.2x lower handle time with SquadStack's Voice AI, transforming sales operations.",
+        title: "Learn how a leading bank-linked brokerage in India achieved 3x higher conversions and 3.2x lower handle time with shyphan.ai's Voice AI, transforming sales operations.",
         imgUrl: "https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=600&auto=format&fit=crop"
     },
     {
@@ -88,7 +88,7 @@ export default function CustomerStoriesGrid() {
         <section className={styles.gridSection}>
             <div className={styles.container}>
                 
-                <h2 className={styles.mainTitle}>SquadStack Success Stories</h2>
+                <h2 className={styles.mainTitle}>shyphan.ai Success Stories</h2>
 
                 {/* Filter Pills */}
                 <div className={`${styles.filterBar} reveal`}>
@@ -116,7 +116,7 @@ export default function CustomerStoriesGrid() {
                                             <rect x="13" y="13" width="9" height="9" rx="2" fill="white" opacity="0.6" />
                                             <rect x="2" y="13" width="9" height="9" rx="2" fill="white" opacity="0.8" />
                                         </svg>
-                                        SquadStack.ai × <span style={{fontWeight: '700', marginLeft: '4px'}}>{story.brand}</span>
+                                        shyphan.ai × <span style={{fontWeight: '700', marginLeft: '4px'}}>{story.brand}</span>
                                     </div>
                                 </div>
                             </div>

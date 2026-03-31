@@ -33,7 +33,7 @@ export default function BlogHero() {
                             <rect x="13" y="13" width="9" height="9" rx="2" fill="white" opacity="0.6" />
                             <rect x="2" y="13" width="9" height="9" rx="2" fill="white" opacity="0.8" />
                         </svg>
-                        SquadStack.ai
+                        shyphan.ai
                     </div>
                 </div>
             </div>

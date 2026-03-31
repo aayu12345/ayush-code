@@ -8,7 +8,7 @@ const tabData = [
         icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14v-4z"/><rect x="3" y="6" width="12" height="12" rx="2" ry="2"/></svg>,
         title: "Context",
         subtitle: "CONTEXT TRAINING",
-        heading: "Context about SquadStack is given through a series of informational videos",
+        heading: "Context about shyphan.ai is given through a series of informational videos",
         bgClass: styles.bgContext
     },
     {

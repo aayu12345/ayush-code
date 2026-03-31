@@ -6,7 +6,7 @@ import IndustryGrid from '@/components/IndustryGrid';
 import GlobalFooter from '@/components/GlobalFooter';
 
 export const metadata = {
-    title: 'Industry Reports | SquadStack Resources',
+    title: 'Industry Reports | shyphan.ai Resources',
     description: 'Explore our latest comprehensive reports tracking market trend shifts and growth multipliers spanning CX, Finance, eCommerce, and Logistics.',
 };
 

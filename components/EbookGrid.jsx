@@ -93,7 +93,7 @@ export default function EbookGrid() {
                         <img src={card.imgUrl} alt={card.title} className={styles.cardImage} />
                         <div className={styles.overlayGraphic}>
                             <h4 className={styles.graphicTitle}>{card.desc}</h4>
-                            <div className={styles.graphicLogo}>SquadStack.ai</div>
+                            <div className={styles.graphicLogo}>shyphan.ai</div>
                         </div>
                     </div>
                     <div className={styles.cardContent}>

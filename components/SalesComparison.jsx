@@ -64,7 +64,7 @@ export default function SalesComparison() {
                     <div className={styles.tableHead}>
                         <div className={styles.colAspectTitle}>Aspect</div>
                         <div className={styles.colHumanTitle}>Human-Led Sales</div>
-                        <div className={styles.colAiTitle}>SquadStack.AI Voice Agent-Led Sales</div>
+                        <div className={styles.colAiTitle}>shyphan.ai Voice Agent-Led Sales</div>
                     </div>
 
                     {/* Body Rows */}

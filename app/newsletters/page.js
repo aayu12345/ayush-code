@@ -6,7 +6,7 @@ import NewsletterRelated from '@/components/NewsletterRelated';
 import NewsletterFooter from '@/components/NewsletterFooter';
 
 export const metadata = {
-    title: 'Newsletters | SquadStack Resources',
+    title: 'Newsletters | shyphan.ai Resources',
     description: 'Step into the Future of CX with the Dialed In newsletter. Gain insights into AI-led customer experience strategies and automations.',
 };
 

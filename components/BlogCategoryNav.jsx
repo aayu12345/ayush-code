@@ -8,7 +8,7 @@ export default function BlogCategoryNav() {
         "Sales Artificial Intelligence",
         "Telecalling Best Practices",
         "Customer Success Stories",
-        "SquadStack Life"
+        "shyphan.ai Life"
     ];
 
     return (

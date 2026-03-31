@@ -96,6 +96,7 @@ const navLinks = [
 export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
+    const [expandedDrawerItem, setExpandedDrawerItem] = useState(null);
 
     useEffect(() => {
         const handler = () => setScrolled(window.scrollY > 20);
@@ -205,27 +206,47 @@ export default function Navbar() {
                 <div className={styles.drawer}>
                     {navLinks.map((navItem) => (
                         <div key={navItem.label} className={styles.drawerGroup}>
-                            <a href={navItem.href || "#"} className={styles.drawerLink} onClick={() => !navItem.items && setMenuOpen(false)}>
-                                {navItem.label}
+                            <a 
+                                href={navItem.href || "#"} 
+                                className={styles.drawerLink} 
+                                style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}
+                                onClick={(e) => {
+                                    if (navItem.hasDropdown) {
+                                        e.preventDefault();
+                                        setExpandedDrawerItem(expandedDrawerItem === navItem.label ? null : navItem.label);
+                                    } else {
+                                        setMenuOpen(false);
+                                    }
+                                }}
+                            >
+                                <span>{navItem.label}</span>
+                                {navItem.hasDropdown && (
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" style={{transform: expandedDrawerItem === navItem.label ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.2s'}}>
+                                        <path d="M3 5l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                    </svg>
+                                )}
                             </a>
-                            {navItem.items && !navItem.isMegaMenu && (
-                                <div className={styles.drawerSub}>
-                                    {navItem.items.map(subItem => (
-                                        <a href={subItem.href} key={subItem.label} className={styles.drawerSubLink} onClick={() => setMenuOpen(false)}>
-                                            {subItem.label}
-                                        </a>
-                                    ))}
-                                </div>
-                            )}
-                            {navItem.isMegaMenu && navItem.megaMenuContent && (
-                                <div className={styles.drawerSub}>
-                                    <div style={{fontWeight: 600, padding: '8px 16px', color: '#1e293b'}}>Links</div>
-                                    {navItem.megaMenuContent.leftLinks.map((link, subIdx) => (
-                                        <a href={link.href} key={subIdx} className={styles.drawerSubLink} onClick={() => setMenuOpen(false)}>
-                                            {link.label}
-                                        </a>
-                                    ))}
-                                </div>
+                            {expandedDrawerItem === navItem.label && (
+                                <>
+                                    {navItem.items && !navItem.isMegaMenu && (
+                                        <div className={styles.drawerSub}>
+                                            {navItem.items.map(subItem => (
+                                                <a href={subItem.href} key={subItem.label} className={styles.drawerSubLink} onClick={() => setMenuOpen(false)}>
+                                                    {subItem.label}
+                                                </a>
+                                            ))}
+                                        </div>
+                                    )}
+                                    {navItem.isMegaMenu && navItem.megaMenuContent && (
+                                        <div className={styles.drawerSub}>
+                                            {navItem.megaMenuContent.leftLinks.map((link, subIdx) => (
+                                                <a href={link.href} key={subIdx} className={styles.drawerSubLink} onClick={() => setMenuOpen(false)}>
+                                                    {link.label}
+                                                </a>
+                                            ))}
+                                        </div>
+                                    )}
+                                </>
                             )}
                         </div>
                     ))}

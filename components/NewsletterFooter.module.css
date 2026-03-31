@@ -1,0 +1,279 @@
+.newsletterFooter {
+    background: linear-gradient(135deg, rgba(240, 245, 255, 0.5), rgba(216, 180, 254, 0.4), rgba(254, 215, 170, 0.3));
+    padding: 80px 24px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topContainer {
+    max-width: 1200px;
+    width: 100%;
+    margin-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+@media (min-width: 900px) {
+    .topContainer {
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+}
+
+.headerText h2 {
+    font-size: 2.5rem;
+    color: #1e293b;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.highlight {
+    color: #7c3aed; /* core purple accent */
+}
+
+.subscribeBox {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.subscribeLabel {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.subscribeInput {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #1e293b;
+    border-radius: 40px;
+    padding: 4px 8px 4px 24px;
+    overflow: hidden;
+}
+
+.subscribeInput input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: #1e293b;
+    padding: 12px 0;
+}
+
+.subscribeInput input::placeholder {
+    color: #64748b;
+}
+
+.subscribeInput button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #1e293b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+
+.floatingCard {
+    background: #ffffff;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    box-shadow: 0 12px 48px rgba(0,0,0,0.05);
+    margin-bottom: 48px;
+}
+
+.cardGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 48px;
+}
+
+@media (min-width: 768px) {
+    .cardGrid {
+        grid-template-columns: auto 1fr 1fr auto;
+        gap: 64px;
+    }
+}
+
+.brandCol {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.logoRow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #1e293b;
+}
+
+.logoText {
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.linkList {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.linkList a {
+    color: #475569;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.linkList a:hover {
+    color: #1e293b;
+}
+
+.actionCol {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+@media (min-width: 768px) {
+    .actionCol {
+        align-items: flex-end;
+    }
+}
+
+.demoBtn {
+    background: #1e293b; /* dark base badge color */
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.demoBtn:hover {
+    background: #0f172a;
+}
+
+.emailText {
+    font-size: 0.95rem;
+    color: #1e293b;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.cardBottom {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border-top: 1px solid #f1f5f9;
+    padding-top: 32px;
+}
+
+@media (min-width: 768px) {
+    .cardBottom {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
+
+.address {
+    font-size: 0.85rem;
+    color: #475569;
+    line-height: 1.6;
+}
+
+.socials {
+    display: flex;
+    gap: 16px;
+}
+
+.socialIcon {
+    width: 36px;
+    height: 36px;
+    background: #f1f5f9;
+    color: #475569;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+}
+
+.socialIcon:hover {
+    background: #e2e8f0;
+    color: #1e293b;
+}
+
+.bottomLegal {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    text-align: center;
+}
+
+@media (min-width: 900px) {
+    .bottomLegal {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+}
+
+.copyright {
+    font-size: 0.85rem;
+    color: #475569;
+    font-weight: 600;
+}
+
+.legalLinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.legalLinks a {
+    color: #475569;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.legalLinks a:hover {
+    color: #1e293b;
+}
+
+.dot {
+    color: #1e293b;
+    font-size: 1rem;
+    font-weight: 800;
+}

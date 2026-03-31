@@ -64,14 +64,14 @@ const navLinks = [
         isMegaMenu: true,
         megaMenuContent: {
             leftLinks: [
-                { label: 'Blogs', href: '#', icon: <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg> },
+                { label: 'Blogs', href: '/blog', icon: <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg> },
                 { label: 'Success Stories', href: '/customer-stories', icon: <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg> },
-                { label: 'E-books and White Papers', href: '#', icon: <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg> },
-                { label: 'Events', href: '#', icon: <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> },
-                { label: 'Humanoid Interaction Library', href: '#', icon: <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M2 16.1A5 5 0 0 1 5.9 20M2 12.05A9 9 0 0 1 9.95 20M2 8V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6"></path><line x1="2" y1="20" x2="2.01" y2="20"></line></svg> },
-                { label: 'NewsLetters', href: '#', icon: <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg> },
-                { label: 'Industry Reports', href: '#', icon: <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg> },
-                { label: 'Webinars', href: '#', icon: <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg> },
+                { label: 'E-books and White Papers', href: '/e-book', icon: <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg> },
+                { label: 'Events', href: '/resources/events', icon: <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> },
+                { label: 'Humanoid Interaction Library', href: '/humanoid-interaction-library', icon: <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M2 16.1A5 5 0 0 1 5.9 20M2 12.05A9 9 0 0 1 9.95 20M2 8V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6"></path><line x1="2" y1="20" x2="2.01" y2="20"></line></svg> },
+                { label: 'NewsLetters', href: '/newsletters', icon: <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg> },
+                { label: 'Industry Reports', href: '/resources/industry-report', icon: <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg> },
+                { label: 'Webinars', href: '/resources/webinar', icon: <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg> },
                 { label: 'View All', href: '#', icon: <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg> },
             ],
             rightCards: [
@@ -90,7 +90,26 @@ const navLinks = [
             ]
         }
     },
-    { label: 'Company', hasDropdown: true },
+    { 
+        label: 'Company', 
+        hasDropdown: true,
+        isMegaMenu: true,
+        megaMenuLayout: 'company',
+        megaMenuContent: {
+            imageCard: {
+                title: 'Become a Telecaller',
+                imgUrl: 'https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=400&auto=format&fit=crop',
+                href: '#'
+            },
+            linksList: [
+                { label: 'Company', isTitle: true },
+                { label: 'About', href: '#' },
+                { label: 'Careers', href: '#' },
+                { label: 'Life at SquadStack', href: '#' },
+                { label: 'Newsroom', href: '#' }
+            ]
+        }
+    },
 ];
 
 export default function Navbar() {
@@ -145,8 +164,8 @@ export default function Navbar() {
                                 </div>
                             )}
                             
-                            {/* Mega Menu */}
-                            {navItem.isMegaMenu && navItem.megaMenuContent && (
+                            {/* Mega Menu - Resources Layout */}
+                            {navItem.isMegaMenu && navItem.megaMenuContent && !navItem.megaMenuLayout && (
                                 <div className={styles.megaMenu}>
                                     <div className={styles.megaMenuLeft}>
                                         {navItem.megaMenuContent.leftLinks.map((link, idx) => (
@@ -168,6 +187,27 @@ export default function Navbar() {
                                                 </a>
                                             ))}
                                         </div>
+                                    </div>
+                                </div>
+                            )}
+
+                            {/* Mega Menu - Company Layout */}
+                            {navItem.isMegaMenu && navItem.megaMenuContent && navItem.megaMenuLayout === 'company' && (
+                                <div className={styles.megaMenuCompany}>
+                                    <a href={navItem.megaMenuContent.imageCard.href} className={styles.companyLeftImg}>
+                                        <img src={navItem.megaMenuContent.imageCard.imgUrl} alt="Company" />
+                                        <div className={styles.companyImgOverlay}>
+                                            <span className={styles.companyPill}>{navItem.megaMenuContent.imageCard.title}</span>
+                                        </div>
+                                    </a>
+                                    <div className={styles.companyRightLinks}>
+                                        {navItem.megaMenuContent.linksList.map((link, idx) => 
+                                            link.isTitle ? (
+                                                <div key={idx} className={styles.companyMenuTitle}>{link.label}</div>
+                                            ) : (
+                                                <a key={idx} href={link.href} className={styles.companyMenuLink}>{link.label}</a>
+                                            )
+                                        )}
                                     </div>
                                 </div>
                             )}

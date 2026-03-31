@@ -1,0 +1,155 @@
+.contentSection {
+    background: linear-gradient(180deg, #ffffff 0%, rgba(240, 245, 255, 0.4) 100%);
+    padding: 80px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.mainTitle {
+    font-size: 2rem;
+    color: #1e293b;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.subtitle {
+    font-size: 1.15rem;
+    color: #475569;
+    margin-bottom: 40px;
+}
+
+.tabsContainer {
+    display: inline-flex;
+    background: white;
+    border: 1px solid #c4b5fd;
+    border-radius: 12px;
+    padding: 4px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.tabBtn {
+    flex: 1;
+    padding: 14px 24px;
+    background: transparent;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #64748b;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.activeTab {
+    background: linear-gradient(135deg, rgba(254, 215, 170, 0.3), rgba(216, 180, 254, 0.4));
+    color: #4f46e5;
+}
+
+.tabContent {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brandLogoGraphic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 64px;
+    border-bottom: 2px solid #cbd5e1;
+    padding-bottom: 16px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.logoTop {
+    font-size: 4rem;
+    font-weight: 900;
+    font-family: monospace;
+    letter-spacing: -0.05em;
+    line-height: 1;
+}
+
+.logoLight {
+    color: #8b5cf6;
+}
+
+.logoDark {
+    color: #1e293b;
+}
+
+.logoBottom {
+    margin-top: -10px;
+}
+
+.byLine {
+    font-size: 1.1rem;
+    color: #475569;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+.columnsBlock {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 48px;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .columnsBlock {
+        grid-template-columns: 1fr 1fr;
+        gap: 64px;
+    }
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.dateLabel {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #64748b;
+    letter-spacing: 0.1em;
+    margin-bottom: 12px;
+}
+
+.editionTitle {
+    font-size: 1.4rem;
+    color: #1e293b;
+    font-weight: 500;
+    margin-bottom: 16px;
+    line-height: 1.3;
+}
+
+.desc {
+    font-size: 1rem;
+    color: #475569;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.readMore {
+    font-size: 1rem;
+    color: #7c3aed;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s;
+    margin-top: auto;
+}
+
+.readMore:hover {
+    color: #6d28d9;
+}

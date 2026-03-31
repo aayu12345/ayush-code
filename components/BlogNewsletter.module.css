@@ -1,0 +1,93 @@
+.newsletterSection {
+    background-color: #f0fdf4; /* Light teal bg matching squadstack design */
+    padding: 80px 24px;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+}
+
+.textContent {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 600px;
+}
+
+.title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #162447;
+    line-height: 1.2;
+}
+
+.desc {
+    font-size: 1.1rem;
+    color: #475569;
+    line-height: 1.6;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 800px;
+}
+
+@media (min-width: 768px) {
+    .formGroup {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.inputWrapper {
+    flex: 1;
+}
+
+.inputField {
+    width: 100%;
+    padding: 16px 20px;
+    font-size: 1rem;
+    color: #1e293b;
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.inputField:focus {
+    border-color: #39CEA0;
+    box-shadow: 0 0 0 3px rgba(57, 206, 160, 0.15);
+}
+
+.inputField::placeholder {
+    color: #94a3b8;
+}
+
+.submitBtn {
+    background: #162447;
+    color: white;
+    font-size: 1.05rem;
+    font-weight: 600;
+    padding: 16px 36px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    white-space: nowrap;
+}
+
+.submitBtn:hover {
+    background: #0f172a;
+    transform: translateY(-2px);
+}
